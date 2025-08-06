@@ -1,0 +1,242 @@
+/* Base styles */
+body {
+  margin: 0;
+  font-family: 'Times New Roman', Times, serif !important;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Override Bootstrap default fonts */
+*, 
+.btn,
+.form-control,
+.navbar-brand,
+.card-title,
+.alert,
+.badge,
+h1, h2, h3, h4, h5, h6,
+.h1, .h2, .h3, .h4, .h5, .h6 {
+  font-family: 'Times New Roman', Times, serif !important;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+/* Card styles */
+.card {
+  height: 100%;
+  border: none;
+  border-radius: 10px;
+  margin-bottom: 0;
+  transition: all 0.3s ease;
+}
+
+.card-body {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.card-header {
+  border-radius: 10px 10px 0 0 !important;
+}
+
+.card-title {
+  transition: all 0.3s ease;
+  font-weight: bold;
+}
+
+.card:hover .card-title {
+  color: #0b5ed7 !important;
+}
+
+/* Button styles */
+.btn {
+  height: 44px;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  font-weight: 500;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  white-space: nowrap;
+}
+
+.btn i {
+  font-size: 1rem;
+}
+
+.btn-primary {
+  background-color: #0d6efd !important;
+  border-color: #0d6efd !important;
+  color: white !important;
+}
+
+.btn-primary:hover {
+  background-color: #0b5ed7 !important;
+  border-color: #0b5ed7 !important;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(13, 110, 253, 0.2);
+}
+
+.btn-danger {
+  background-color: #dc3545 !important;
+  border-color: #dc3545 !important;
+  color: white !important;
+}
+
+.btn-danger:hover {
+  background-color: #bb2d3b !important;
+  border-color: #bb2d3b !important;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(220, 53, 69, 0.2);
+}
+
+/* Form styles */
+.form-control {
+  font-size: 1rem;
+}
+
+.form-control:focus {
+  border-color: #86b7fe;
+  box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.25);
+}
+
+.input-group {
+  width: 100%;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+  border-radius: 8px;
+}
+
+.input-group-text {
+  border-right: none;
+}
+
+/* Navigation styles */
+.navbar {
+  padding: 1rem 0;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.navbar-brand {
+  font-size: 1.25rem;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+/* Hover effects */
+.hover-shadow {
+  transition: all 0.3s ease;
+}
+
+.hover-shadow:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1) !important;
+}
+
+/* Grid layout */
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  --bs-gutter-x: 1.5rem;
+  --bs-gutter-y: 1.5rem;
+  margin-left: -0.75rem;
+  margin-right: -0.75rem;
+}
+
+[class*="col-"] {
+  display: flex;
+  flex-direction: column;
+  padding: 0.75rem;
+}
+
+/* Utility classes */
+.badge {
+  padding: 0.5em 1em;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.alert {
+  border: none;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+}
+
+.bg-light {
+  background-color: #f8f9fa !important;
+}
+
+.text-break {
+  word-break: break-word !important;
+  overflow-wrap: break-word !important;
+}
+
+.list-unstyled {
+  min-height: 120px;
+}
+
+/* Responsive styles */
+@media (max-width: 576px) {
+  .card-body {
+    padding: 1rem !important;
+  }
+  
+  .container {
+    padding-left: 1rem !important;
+    padding-right: 1rem !important;
+  }
+  
+  .btn {
+    width: 100%;
+    margin-bottom: 0.5rem;
+    min-width: 0 !important;
+    flex: 1;
+  }
+  
+  .display-6 {
+    font-size: 2rem !important;
+  }
+  
+  .navbar-brand {
+    font-size: 1.1rem;
+  }
+
+  input {
+    font-size: 16px !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .btn {
+    padding: 0.625rem 1rem;
+  }
+  
+  .card-body {
+    padding: 1.25rem !important;
+  }
+}
+
+@media (min-width: 576px) {
+  .p-responsive {
+    padding: 1.5rem !important;
+  }
+}
+
+@media (min-width: 768px) {
+  .w-md-auto {
+    width: auto !important;
+  }
+}
+
+/* Additional font styles for specific elements */
+input::placeholder,
+textarea::placeholder {
+  font-family: 'Times New Roman', Times, serif !important;
+}
+
+.form-floating > label {
+  font-family: 'Times New Roman', Times, serif !important;
+}
