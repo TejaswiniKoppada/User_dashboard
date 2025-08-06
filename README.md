@@ -181,4 +181,3 @@ This project is open source and available under the [MIT License](LICENSE).
 ---
 
 Hope you enjoy exploring this project as much as I enjoyed building it! If you have any questions or suggestions, feel free to reach out! 😊
->>>>>>> 554d09d7d74ad665dd786a29fe9b705cebc9f3f7
