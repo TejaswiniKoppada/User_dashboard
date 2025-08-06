@@ -59,7 +59,7 @@ It's super easy to get this up and running on your machine! Here's how:
 
 1. **First, clone this repository:**
 ```bash
-git clone [your-repository-url]
+git clone https://github.com/TejaswiniKoppada/User_dashboard
 cd user-dashboard
 ```
 
@@ -75,7 +75,7 @@ npm start
 
 4. **Open your browser and head to:**
 ```
-http://localhost:3000
+http://localhost:3001
 ```
 
 And voilà! You should see the dashboard in all its glory! 🎉
